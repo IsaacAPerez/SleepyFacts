@@ -11,6 +11,12 @@
 		7C9B9EB5254DE7D0001C74D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B9EB4254DE7D0001C74D7 /* ContentView.swift */; };
 		7C9B9EB7254DE7D2001C74D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9B9EB6254DE7D2001C74D7 /* Assets.xcassets */; };
 		7C9B9EBA254DE7D2001C74D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9B9EB9254DE7D2001C74D7 /* Preview Assets.xcassets */; };
+		7CDDB11D256E2F84008408DA /* TheBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDB11C256E2F84008408DA /* TheBasicsView.swift */; };
+		7CDDB123256E39CF008408DA /* DreamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDB122256E39CF008408DA /* DreamsView.swift */; };
+		7CDDB126256E39DB008408DA /* InsomniaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDB125256E39DB008408DA /* InsomniaView.swift */; };
+		7CDDB129256E3A03008408DA /* ForChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDB128256E3A03008408DA /* ForChildrenView.swift */; };
+		7CDDB12C256E3A13008408DA /* SleepMeditaionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDB12B256E3A13008408DA /* SleepMeditaionView.swift */; };
+		7CDDB12F256E3A36008408DA /* TipsForSleepingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDB12E256E3A36008408DA /* TipsForSleepingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		7C9B9EB6254DE7D2001C74D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C9B9EB9254DE7D2001C74D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C9B9EBB254DE7D2001C74D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDDB11C256E2F84008408DA /* TheBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasicsView.swift; sourceTree = "<group>"; };
+		7CDDB122256E39CF008408DA /* DreamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsView.swift; sourceTree = "<group>"; };
+		7CDDB125256E39DB008408DA /* InsomniaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsomniaView.swift; sourceTree = "<group>"; };
+		7CDDB128256E3A03008408DA /* ForChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForChildrenView.swift; sourceTree = "<group>"; };
+		7CDDB12B256E3A13008408DA /* SleepMeditaionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMeditaionView.swift; sourceTree = "<group>"; };
+		7CDDB12E256E3A36008408DA /* TipsForSleepingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsForSleepingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 			children = (
 				7C9B9EB2254DE7D0001C74D7 /* SleepyApp.swift */,
 				7C9B9EB4254DE7D0001C74D7 /* ContentView.swift */,
+				7CDDB11C256E2F84008408DA /* TheBasicsView.swift */,
+				7CDDB12B256E3A13008408DA /* SleepMeditaionView.swift */,
+				7CDDB128256E3A03008408DA /* ForChildrenView.swift */,
+				7CDDB12E256E3A36008408DA /* TipsForSleepingView.swift */,
+				7CDDB125256E39DB008408DA /* InsomniaView.swift */,
+				7CDDB122256E39CF008408DA /* DreamsView.swift */,
 				7C9B9EB6254DE7D2001C74D7 /* Assets.xcassets */,
 				7C9B9EBB254DE7D2001C74D7 /* Info.plist */,
 				7C9B9EB8254DE7D2001C74D7 /* Preview Content */,
@@ -139,7 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C9B9EB5254DE7D0001C74D7 /* ContentView.swift in Sources */,
+				7CDDB126256E39DB008408DA /* InsomniaView.swift in Sources */,
+				7CDDB12C256E3A13008408DA /* SleepMeditaionView.swift in Sources */,
 				7C9B9EB3254DE7D0001C74D7 /* SleepyApp.swift in Sources */,
+				7CDDB123256E39CF008408DA /* DreamsView.swift in Sources */,
+				7CDDB12F256E3A36008408DA /* TipsForSleepingView.swift in Sources */,
+				7CDDB11D256E2F84008408DA /* TheBasicsView.swift in Sources */,
+				7CDDB129256E3A03008408DA /* ForChildrenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,37 +8,102 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var title = "Welcome To SleepyFacts"
     var body: some View {
-        VStack {
-            Spacer()
-            Text("Hello, world!")
-                .fontWeight(.bold)
-                .font(.largeTitle)
-                .padding()
-                
-
-            
-            Spacer()
-            Button(action: {
-                print("Delete button tapped!")
-            }) {
-                Text("Hello World")
-                    .fontWeight(.bold)
-                    .font(.title)
-                    .frame(minWidth: 0, maxWidth: .some(350))
-                    .padding()
-                    .background(Color.red)
-                    .cornerRadius(40)
-                    .foregroundColor(.white)
-                    .padding(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 35)
-                            .stroke(Color.red, lineWidth: 5)
-                    )
+        NavigationView{
+            ZStack{
+                Color.black
+                .edgesIgnoringSafeArea(.all)
+                VStack{
+                    Text("SleepyFacts")
+                        .fontWeight(.bold)
+                        .font(.title)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    HStack {
+                        NavigationLink(destination: TheBasicsView()){
+                            Text("The Basics")
+                                .fontWeight(.bold)
+                                .font(.title)
+                                .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                        NavigationLink(destination: SleepMeditaionView()){
+                            Text("Sleep Meditation")
+                                .fontWeight(.bold)
+                                .font(.title)
+                                .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                        
+                    }
+                    HStack {
+                        NavigationLink(destination: InsomniaView()){
+                            Text("Insomnia")
+                                .fontWeight(.bold)
+                                .font(.title)
+                                .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                        NavigationLink(destination: ForChildrenView()){
+                            Text("For Children")
+                                .fontWeight(.bold)
+                                .font(.title)
+                                .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                        
+                    }
+                    HStack {
+                        NavigationLink(destination: TipsForSleepingView()){
+                            Text("Tips for Sleeping")
+                                .fontWeight(.bold)
+                                .font(.title)
+                                .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                        NavigationLink(destination: DreamsView()){
+                            Text("Dreams")
+                                .fontWeight(.bold)
+                                .font(.title)
+                                .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                        
+                    }
+                    
+                }
             }
             
+            
+            
         }
-    }
+            
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
