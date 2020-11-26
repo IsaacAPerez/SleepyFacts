@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var title = "Welcome To SleepyFacts"
     var body: some View {
         NavigationView{
             ZStack{
@@ -17,8 +16,12 @@ struct ContentView: View {
                 VStack{
                     Text("SleepyFacts")
                         .fontWeight(.bold)
-                        .font(.title)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                        .font(.largeTitle)
+                        .frame(maxWidth: 400)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                        .cornerRadius(10)
                     Spacer()
                     HStack {
                         NavigationLink(destination: TheBasicsView()){
@@ -27,7 +30,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
                                 .padding()
-                                .background(Color.red)
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
                                 .padding(10)
@@ -38,7 +41,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
                                 .padding()
-                                .background(Color.red)
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
                                 .padding(10)
@@ -52,7 +55,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
                                 .padding()
-                                .background(Color.red)
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
                                 .padding(10)
@@ -63,7 +66,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
                                 .padding()
-                                .background(Color.red)
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
                                 .padding(10)
@@ -77,7 +80,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
                                 .padding()
-                                .background(Color.red)
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
                                 .padding(10)
@@ -88,7 +91,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .frame(minWidth: 0, maxWidth: 350, minHeight: 100)
                                 .padding()
-                                .background(Color.red)
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
                                 .padding(10)
@@ -98,12 +101,9 @@ struct ContentView: View {
                     
                 }
             }
-            
-            
-            
         }
             
-}
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

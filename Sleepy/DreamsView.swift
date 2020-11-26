@@ -9,7 +9,19 @@ import SwiftUI
 
 struct DreamsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.black
+            .edgesIgnoringSafeArea(.all)
+            VStack(alignment: .leading){
+                Text("Dreams")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.red)
+                    .padding(.trailing, 200.0)
+                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                Spacer()
+            }
+        }
     }
 }
 
