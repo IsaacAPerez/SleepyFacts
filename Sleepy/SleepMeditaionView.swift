@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct SleepMeditaionView: View {
+    @State var bombSoundEffect: AVAudioPlayer!
     var body: some View {
         ZStack{
             Color.black
@@ -87,13 +89,26 @@ struct SleepMeditaionView: View {
                 }
                 Spacer()
                 Button(action: {
-                    print("Button action")
+                    let path = Bundle.main.path(forResource: "song.mp3", ofType:nil)!
+                    let url = URL(fileURLWithPath: path)
+
+                    do {
+                        bombSoundEffect = try AVAudioPlayer(contentsOf: url)
+                        bombSoundEffect.play()
+                    } catch {
+                        // couldn't load file :(
+                        print("no Song")
+                    }
                 }) {
-                    Text("Hello World")
-                        .background(Color.purple) // 1. Change the background color to purple
-                        .foregroundColor(.white)  // 2. Set the foreground/font color to white
-                        .font(.title)             // 3. Change the font type
+                    Text("Click for Music")
+                        .fontWeight(.bold)
+                        .font(.title)
+                        .frame(maxWidth: 300, minHeight: 50)
                         .padding()
+                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                        .cornerRadius(20)
+                        .foregroundColor(.white)
+                        .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 }
                 
             }
