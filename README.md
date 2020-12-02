@@ -4,7 +4,7 @@
 
 <p float="left">
   <img src="mFI23CxCzs.gif" width="300 height = "400">
-  <img src="xcode.gif" width="630" height = "400">
+  <img src="xcode.gif" width="600" height = "400">
 </p>
 
 
