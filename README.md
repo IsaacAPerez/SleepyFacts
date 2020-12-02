@@ -8,9 +8,12 @@
 </p>
 
 
-> Tips
+> Sleep Categories
 
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
+- The Basics
+- Sleep Meditation
+- For Children
+- Tips for Sleeping
+- Insomnia
+- Dreams
 
